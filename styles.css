@@ -7,7 +7,7 @@
 body {
   padding: 0;
   margin: 0;
-  background: white(to right, #250e07, #2e2d44);
+  background: lightgray(to right, #4e1d0d, #5159a3);
 }
 
 .calculator-grid {
@@ -53,6 +53,6 @@ body {
 }
 
 .output .current-operand {
-  color: white;
+  color: cornflowerblue;
   font-size: 2.5rem;
 }
