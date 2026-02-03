@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   font-family: Gotham Rounded, sans-serif;
   font-weight: normal;
@@ -7,7 +9,7 @@
 body {
   padding: 0;
   margin: 0;
-  background: lightgray(to right, #4e1d0d, #5159a3);
+  background: lightgray;
 }
 
 .calculator-grid {
@@ -22,13 +24,14 @@ body {
 .calculator-grid > button {
   cursor: pointer;
   font-size: 2rem;
-  border: 1px solid white;
+  border: 2px solid black;
   outline: none;
-  background-color: rgba(255, 255, 255, .75);
+  background-color: white;
+  color: black;
 }
 
 .calculator-grid > button:hover {
-  background-color: rgba(255, 255, 255, .9);
+  background-color: #eee; /* Slightly darker for hover effect */
 }
 
 .span-two {
@@ -37,22 +40,23 @@ body {
 
 .output {
   grid-column: 1 / -1;
-  background-color: rgba(0, 0, 0, .75);
+  background-color: rgba(0, 0, 0, 0.75);
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
   flex-direction: column;
   padding: 10px;
+  color: white; /* Text color for better contrast */
   word-wrap: break-word;
   word-break: break-all;
 }
 
 .output .previous-operand {
-  color: rgba(255, 255, 255, .75);
+  color: rgba(255, 255, 255, 0.75);
   font-size: 1.5rem;
 }
 
 .output .current-operand {
-  color: cornflowerblue;
+  color: white; /* Adjusted for contrast */
   font-size: 2.5rem;
 }
